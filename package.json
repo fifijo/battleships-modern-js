@@ -7,8 +7,8 @@
 		"pre-commit": "lint-staged"
 	},
 	"lint-staged": {
-		"src/*": [
-			"eslint --fix",
+		"src/*.{jsx}": [
+			"eslint",
 			"prettier --write --ignore-unknown"
 		]
 	},
