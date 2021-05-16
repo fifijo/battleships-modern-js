@@ -7,7 +7,7 @@
 		"pre-commit": "lint-staged"
 	},
 	"lint-staged": {
-		"src/*.{jsx}": [
+		"./src/*.{jsx}": [
 			"eslint",
 			"prettier --write --ignore-unknown"
 		]
