@@ -1,11 +1,16 @@
 {
 	"scripts": {
+		"eslint": "node_modules/.bin/eslint --fix -- ./src",
 		"start": "snowpack dev",
 		"build": "snowpack build",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"pre-commit": "lint-staged"
 	},
 	"lint-staged": {
-		"src/**/*": "prettier --write --ignore-unknown"
+		"src/**/*": [
+			"eslint --fix",
+			"prettier --write --ignore-unknown"
+		]
 	},
 	"devDependencies": {
 		"@snowpack/plugin-react-refresh": "^2.5.0",
