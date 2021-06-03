@@ -13,7 +13,7 @@
 	},
 	"lint-staged": {
 		"src/**/*": [
-			"format"
+			"pnpm format"
 		]
 	},
 	"jest": {
