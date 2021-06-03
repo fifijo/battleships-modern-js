@@ -1,11 +1,13 @@
 {
     "plugins": [
-        "react"
+        "react",
+        "jest"
     ],
     "env": {
         "browser": true,
         "node": true,
-        "es6": true
+        "es6": true,
+        "jest/globals": true
     },
     "parserOptions": {
         "ecmaVersion": 12,
@@ -15,8 +17,17 @@
         }
     },
     "extends": [
-        "eslint:recommended",
+        "eslint:all",
         "plugin:react/recommended",
-        "prettier"
+        "prettier",
+        "plugin:jest/recommended"
+    ],
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "ignorePatterns": [
+        "node_modules"
     ]
 }

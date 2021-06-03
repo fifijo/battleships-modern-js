@@ -1,6 +1,5 @@
 module.exports = {
     "mount": {
-        // Directory name: 'build directory'
         "public": "/",
         "src": "/dist"
     },
@@ -9,8 +8,6 @@ module.exports = {
             "failOnWarnings": true,
             "htmlMinifierOptions": true
             }
-        ],
-        "@snowpack/plugin-react-refresh"
-
+        ]
     ]
 };
