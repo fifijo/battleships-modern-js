@@ -1,65 +1,61 @@
 {
-	"name": "my-app",
-	"version": "0.0.1",
-	"scripts": {
-		"eslint": "node_modules/.bin/eslint -- ./src",
-		"jest": "node_modules/.bin/jest",
-		"format": "prettier --write \"src/**/*.{js,jsx}\"",
-		"lint": "prettier --check \"src/**/*.{js,jsx}\"",
-		"start": "snowpack dev",
-		"build": "snowpack build",
-		"prepare": "husky install",
-		"pre-commit-lint": "lint-staged"
-	},
-	"lint-staged": {
-		"src/**/*": [
-			"pnpm format"
-		]
-	},
-	"jest": {
-		"verbose": false,
-		"setupFiles": [
-			"<rootDir>/src/config/tests/setup/settings.js",
-			"<rootDir>/src/config/tests/setup/overrides.js"
-		],
-		"collectCoverage": false,
-		"collectCoverageFrom": [
-			"src/**/*.{js,jsx}",
-			"!**/node_modules/**",
-			"!**/vendor/**"
-		],
-		"coverageDirectory": "coverage",
-		"notify": true,
-		"slowTestThreshold": 2,
-		"reporters": [
-			"default"
-		],
-		"testPathIgnorePatterns": [
-			"<rootDir>/src/config/tests/setup/"
-		]
-	},
-	"main": "src/client/index.js",
-	"moduleNameMapper": {
-		"\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/config/tests/setup/fileMock.js"
-	},
-	"devDependencies": {
-		"@snowpack/plugin-babel": "^2.1.7",
-		"@snowpack/plugin-react-refresh": "^2.5.0",
-		"@snowpack/plugin-webpack": "^3.0.0",
-		"@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
-		"enzyme": "^3.11.0",
-		"eslint": "^7.32.0",
-		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-jest": "^24.4.0",
-		"eslint-plugin-react": "^7.24.0",
-		"husky": "^7.0.1",
-		"jest": "^27.0.6",
-		"lint-staged": "^11.1.2",
-		"prettier": "2.3.2",
-		"snowpack": "^3.8.6"
-	},
-	"dependencies": {
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2"
-	}
+  "name": "my-app",
+  "version": "0.0.1",
+  "scripts": {
+    "eslint": "node_modules/.bin/eslint -- ./src",
+    "jest": "node_modules/.bin/jest",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "prettier --check \"src/**/*.{js,jsx}\"",
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "prepare": "husky install",
+    "pretty-quick": "pretty-quick --staged"
+  },
+  "jest": {
+    "verbose": false,
+    "setupFiles": [
+      "<rootDir>/src/config/tests/setup/settings.js",
+      "<rootDir>/src/config/tests/setup/overrides.js"
+    ],
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/vendor/**"
+    ],
+    "coverageDirectory": "coverage",
+    "notify": true,
+    "slowTestThreshold": 2,
+    "reporters": [
+      "default"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/src/config/tests/setup/"
+    ]
+  },
+  "main": "src/client/index.js",
+  "moduleNameMapper": {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/config/tests/setup/fileMock.js"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-babel": "^2.1.7",
+    "@snowpack/plugin-react-refresh": "^2.5.0",
+    "@snowpack/plugin-webpack": "^3.0.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-jest": "^24.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": "^11.1.2",
+    "prettier": "2.3.2",
+    "snowpack": "^3.8.6"
+  },
+  "dependencies": {
+    "pretty-quick": "^3.1.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
 }
