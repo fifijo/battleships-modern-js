@@ -1,6 +1,6 @@
 {
   "name": "battleships-modern-js",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "eslint": "node_modules/.bin/eslint --fix -- ./src",
     "jest": "node_modules/.bin/jest",
@@ -10,7 +10,8 @@
     "build": "snowpack build",
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
-    "changelog": "auto-changelog -p -u --commit-limit false"
+    "changelog": "auto-changelog -p -u --commit-limit false",
+    "release": "release-it"
   },
   "jest": {
     "verbose": false,
@@ -51,10 +52,11 @@
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "prettier": "2.3.2",
-    "snowpack": "^3.8.6"
+    "release-it": "^14.11.3",
+    "snowpack": "^3.8.6",
+    "pretty-quick": "^3.1.1"
   },
   "dependencies": {
-    "pretty-quick": "^3.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
