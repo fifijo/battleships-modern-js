@@ -48,12 +48,6 @@ pnpm test
 pnpm build
 ```
 
-## Changelog
-
-```sh
-pnpm changelog
-```
-
 ## Release
 
 ```sh
