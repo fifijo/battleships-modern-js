@@ -15,7 +15,7 @@ pnpm i
 ## Develop
 
 ```sh
-pnpm start
+pnpm dev
 ```
 
 ## Lint
@@ -42,7 +42,13 @@ pnpm format
 pnpm test
 ```
 
-## Build
+## Serve production build
+
+```sh
+pnpm serve
+```
+
+## Build production
 
 ```sh
 pnpm build
