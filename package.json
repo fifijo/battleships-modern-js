@@ -11,7 +11,8 @@
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
     "changelog": "auto-changelog -p -u --commit-limit false",
-    "release": "release-it --no-npm"
+    "release": "release-it --no-npm",
+    "scan:packages": "auditjs ossi"
   },
   "jest": {
     "verbose": false,
@@ -44,6 +45,7 @@
     "@snowpack/plugin-react-refresh": "^2.5.0",
     "@snowpack/plugin-webpack": "^3.0.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
+    "auditjs": "^4.0.30",
     "auto-changelog": "^2.3.0",
     "eslint": "^7.32.0",
     "eslint-config-prettier": "^8.3.0",
@@ -52,9 +54,9 @@
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "prettier": "2.3.2",
+    "pretty-quick": "^3.1.1",
     "release-it": "^14.11.3",
-    "snowpack": "^3.8.6",
-    "pretty-quick": "^3.1.1"
+    "snowpack": "^3.8.6"
   },
   "dependencies": {
     "react": "^17.0.2",
