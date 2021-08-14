@@ -45,18 +45,18 @@
 	"devDependencies": {
 		"@snowpack/plugin-babel": "^2.1.7",
 		"@snowpack/plugin-react-refresh": "^2.5.0",
-		"@snowpack/plugin-webpack": "^2.3.1",
-		"@wojtekmaj/enzyme-adapter-react-17": "^0.6.1",
+		"@snowpack/plugin-webpack": "^3.0.0",
+		"@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
 		"enzyme": "^3.11.0",
-		"eslint": "^7.27.0",
+		"eslint": "^7.32.0",
 		"eslint-config-prettier": "^8.3.0",
-		"eslint-plugin-jest": "^24.3.6",
-		"eslint-plugin-react": "^7.23.2",
-		"husky": "^6.0.0",
-		"jest": "^27.0.3",
-		"lint-staged": "^11.0.0",
-		"prettier": "2.3.0",
-		"snowpack": "^3.4.0"
+		"eslint-plugin-jest": "^24.4.0",
+		"eslint-plugin-react": "^7.24.0",
+		"husky": "^7.0.1",
+		"jest": "^27.0.6",
+		"lint-staged": "^11.1.2",
+		"prettier": "2.3.2",
+		"snowpack": "^3.8.6"
 	},
 	"dependencies": {
 		"react": "^17.0.2",
