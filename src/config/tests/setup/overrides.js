@@ -1,5 +1,5 @@
-const error = console.error
-const warn = console.warn
+const { error } = console,
+  { warn } = console
 
 console.error = function (message) {
   error.apply(console, arguments)
