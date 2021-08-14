@@ -12,16 +12,46 @@
 pnpm i
 ```
 
-## Usage
+## Develop
 
 ```sh
-npm run start
+pnpm start
+```
+
+## Lint
+
+```sh
+pnpm eslint
+```
+
+## Format
+
+```sh
+pnpm format
 ```
 
 ## Run tests
 
 ```sh
 pnpm test
+```
+
+## Build
+
+```sh
+pnpm build
+```
+
+## Changelog
+
+```sh
+pnpm changelog
+```
+
+## Release
+
+```sh
+pnpm release
 ```
 
 ## Show your support
