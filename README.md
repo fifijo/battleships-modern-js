@@ -24,6 +24,12 @@ pnpm start
 pnpm eslint
 ```
 
+## Scan
+
+```sh
+pnpm scan:packages
+```
+
 ## Format
 
 ```sh
