@@ -1,6 +1,5 @@
 {
   "name": "battleships-modern-js",
-  "version": "1.0.0",
   "npm": false,
   "scripts": {
     "eslint": "node_modules/.bin/eslint --fix -- ./src",
