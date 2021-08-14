@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm changelog && pnpm pretty-quick
+pnpm pretty-quick
