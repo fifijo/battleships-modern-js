@@ -49,7 +49,6 @@
     "eslint-plugin-react": "^7.24.0",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
-    "lint-staged": "^11.1.2",
     "prettier": "2.3.2",
     "snowpack": "^3.8.6"
   },
