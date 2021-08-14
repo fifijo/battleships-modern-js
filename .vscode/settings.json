@@ -1,0 +1,7 @@
+{
+  "editor.formatOnSave": true,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "workbench.startupEditor": "none",
+  "editor.tabSize": 2
+}
