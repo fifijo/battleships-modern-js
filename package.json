@@ -11,7 +11,7 @@
     "prepare": "husky install",
     "pretty-quick": "pretty-quick --staged",
     "changelog": "auto-changelog -p -u --commit-limit false",
-    "release": "release-it"
+    "release": "release-it --no-npm"
   },
   "jest": {
     "verbose": false,

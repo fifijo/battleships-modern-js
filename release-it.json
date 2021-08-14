@@ -17,7 +17,5 @@
     "after:release": "echo Successfully created a release draft v${version} for ${repo.repository}. Please add release notes when necessary and publish it!",
     "before:init": "pnpm eslint && pnpm format && pnpm pretty-quick"
   },
-  "npm": {
-    "publish": false
-  }
+  "npm": false
 }
