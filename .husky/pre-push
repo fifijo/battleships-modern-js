@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-pnpm scan:packages && pnpm eslint && pnpm format && pnpm pretty-quick
+pnpm scan:packages && pnpm format && pnpm pretty-quick
