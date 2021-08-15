@@ -21,19 +21,13 @@ pnpm dev
 ## Lint
 
 ```sh
-pnpm eslint
-```
-
-## Scan
-
-```sh
-pnpm scan:packages
+pnpm lint
 ```
 
 ## Format
 
 ```sh
-pnpm format
+pnpm prettier:format
 ```
 
 ## Run tests
