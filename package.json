@@ -7,7 +7,7 @@
     "build": "vite build",
     "serve": "vite preview",
     "eslint": "node_modules/.bin/eslint --fix -- ./src",
-    "jest": "node_modules/.bin/jest",
+    "jest": "node_modules/.bin/jest --detectOpenHandles",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\"",
     "prepare": "husky install",
@@ -16,12 +16,22 @@
     "scan:packages": "auditjs ossi"
   },
   "jest": {
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx"
+    ],
     "verbose": false,
     "setupFiles": [
       "<rootDir>/src/config/tests/setup/settings.js",
       "<rootDir>/src/config/tests/setup/overrides.js"
     ],
-    "collectCoverage": false,
+    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!**/node_modules/**",
@@ -38,10 +48,10 @@
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 90,
-        "functions": 90,
-        "lines": 90,
-        "statements": 90
+        "branches": 0,
+        "functions": 0,
+        "lines": 0,
+        "statements": 0
       }
     }
   },
@@ -49,6 +59,7 @@
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/src/config/tests/setup/fileMock.js"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.1",
     "@types/react": "^17.0.17",
     "@types/react-dom": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^4.29.1",
@@ -71,8 +82,12 @@
     "vite": "^2.4.4"
   },
   "dependencies": {
+    "@types/react-test-renderer": "^17.0.1",
+    "node-notifier": "^10.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "styled-components": "^5.3.0"
+    "react-test-renderer": "^17.0.2",
+    "styled-components": "^5.3.0",
+    "ts-jest": "^27.0.4"
   }
 }

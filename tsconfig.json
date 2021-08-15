@@ -4,7 +4,7 @@
     "module": "ESnext",
     "target": "ESnext",
     "moduleResolution": "node",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "baseUrl": "./src",
     "paths": {},
     "noEmit": true,
@@ -15,6 +15,6 @@
     "allowSyntheticDefaultImports": true,
     "importsNotUsedAsValues": "error",
     "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "types": ["vite/client"]
+    "types": ["vite/client", "jest"]
   }
 }
