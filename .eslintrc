@@ -1,4 +1,13 @@
 {
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      }
+    }
+  ],
   "plugins": ["react", "jest"],
   "env": {
     "browser": true,
@@ -14,9 +23,9 @@
     }
   },
   "extends": [
-    "eslint:all",
     "plugin:react/recommended",
-    "prettier",
+    "plugin:@typescript-eslint/all",
+    "plugin:prettier/recommended",
     "plugin:jest/recommended"
   ],
   "settings": {

@@ -1,7 +1,5 @@
-interface AppProps {}
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+const app = () => 'Start'
 
-function App({}: AppProps) {
-  return "It's time to fight"
-}
-
-export default App
+export default app

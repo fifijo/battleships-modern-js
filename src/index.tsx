@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable @typescript-eslint/no-unsafe-member-access */
 import React, { StrictMode } from 'react'
 import App from './client/App'
 import ReactDOM from 'react-dom'
@@ -9,6 +11,6 @@ ReactDOM.render(
   document.getElementById('battleship-root')
 )
 
-if (import.meta.hot) {
+if (Boolean(import.meta.hot)) {
   import.meta.hot.accept()
 }
