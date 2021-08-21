@@ -2,7 +2,7 @@
   "parser": "@typescript-eslint/parser",
   "overrides": [
     {
-      "files": ["*.ts", "*.tsx"], // Your TypeScript files extension
+      "files": ["*.ts", "*.tsx"],
       "parserOptions": {
         "project": ["./tsconfig.json"]
       }
@@ -33,5 +33,5 @@
       "version": "detect"
     }
   },
-  "ignorePatterns": ["node_modules", "tests"]
+  "ignorePatterns": ["node_modules"]
 }

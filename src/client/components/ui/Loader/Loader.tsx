@@ -1,10 +1,18 @@
-import React, { Fragment } from 'react'
+import { styled } from '@linaria/react'
+import type { FunctionComponent, PropsWithChildren } from 'react'
+import React from 'react'
 
-const loader = (): JSX.Element => (
-  <Fragment>
-    <div>Loader</div>
-  </Fragment>
-)
+interface Props {
+  readonly children: string
+}
+
+const LOADER = styled.button`
+  text-transform: uppercase;
+`
+
+const loader: FunctionComponent<Props> = ({
+  children
+}: PropsWithChildren<Props>) => <LOADER>{children}</LOADER>
 
 loader.displayName = 'Loader'
 

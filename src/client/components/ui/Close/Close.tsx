@@ -1,10 +1,17 @@
-import React, { Fragment } from 'react'
+import React from 'react'
+import { styled } from '@linaria/react'
+import type { FunctionComponent, PropsWithChildren } from 'react'
 
-const close = (): JSX.Element => (
-  <Fragment>
-    <div>Close</div>
-  </Fragment>
-)
+interface Props {
+  readonly children: string
+}
+
+const CLOSE = styled.button`
+  text-transform: uppercase;
+`
+const close: FunctionComponent<Props> = ({
+  children
+}: PropsWithChildren<Props>) => <CLOSE>{children}</CLOSE>
 
 close.displayName = 'Close'
 

@@ -1,10 +1,18 @@
-import React, { Fragment } from 'react'
+import { styled } from '@linaria/react'
+import type { FunctionComponent, PropsWithChildren } from 'react'
+import React from 'react'
 
-const image = (): JSX.Element => (
-  <Fragment>
-    <div>Image</div>
-  </Fragment>
-)
+interface Props {
+  readonly children: string
+}
+
+const IMAGE = styled.button`
+  text-transform: uppercase;
+`
+
+const image: FunctionComponent<Props> = ({
+  children
+}: PropsWithChildren<Props>) => <IMAGE>{children}</IMAGE>
 
 image.displayName = 'Image'
 

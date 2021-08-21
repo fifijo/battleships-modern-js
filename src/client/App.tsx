@@ -1,10 +1,6 @@
-/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-import React, { Fragment } from 'react'
-const app = (): JSX.Element => (
-  <Fragment>
-    <div>Header test</div>
-  </Fragment>
-)
+import React from 'react'
+import Button from './components/ui/Button'
+
+const app = (): JSX.Element => <Button>Header test</Button>
 
 export default app
