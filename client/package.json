@@ -1,9 +1,9 @@
 {
   "name": "battleships-modern-js",
-  "main": "./src/index.tsx",
+  "main": ".client/src/index.tsx",
   "npm": false,
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
     "serve": "vite preview",
     "lint": "node_modules/.bin/eslint --fix -- ./src",
